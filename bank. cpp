@@ -1,0 +1,97 @@
+#include<iostream>
+#include<cstring>
+
+
+using namespace std;
+
+class BankACCOunt{
+    private:
+     int id;
+     string IFSCCode;
+     string name;
+     int bal;        //properties of class
+    
+
+    public:
+
+    BankACCOunt(){
+    ID =100;
+    IFSCCode = "1234";
+    name  =   "abc";
+    bal   =    10000;
+   
+    }
+    BankACCOunt(int id1,string IFSCCode1,string name1,int bal1){
+        id = id1;
+        IFSCCode = IFSCCode1;
+        name = name1;
+        bal = bal1;
+    }
+
+    void setId(int id1){
+        if(id1 < 0){
+            return;
+        }
+        id = id1;
+    }
+
+    void getId(){
+        return id;
+    }
+
+    VOid setIFSCCode(string IFSCCode1){
+        IFSCCode = IFSCCode1;
+    }
+    String get IFSCCode(){
+        return IFSCCode;
+    }
+    void setname(string name1){
+        name = name
+    }
+    string getname (){
+        return name;
+    }
+    void bal(int bal1){
+        bal = bal1;
+    }
+int getbal9)(){
+    return bal;
+}
+void display(){
+    cout<<"id:"<<id<<end1;
+    cout<<"IFSCCode":"<<IFSCCode<<endl;
+    cout<<"name:"<<name<<endl;
+    cout<<"bal:"<<bal<<endl;
+}
+};
+int main(){
+     BankACCOunt b1;
+     b1.display();
+
+     BankACCOunt b2;
+     b2.display();
+
+     BankACCOunt b3;
+     b3.display();
+
+     BankACCOunt b3(10,"ICIC1234","SANDEEP",15000);
+     b3.display();
+
+     BankACCOunt b4(11, "BOI5678", "SUSHANT",15000);
+     b4.display();
+     b4.setBalance(20000);
+     printf("\n");
+     b4.display();
+
+     cout<<b4.getid()<<endl;
+     
+
+     // b3.name = "kaustubh";
+     b3.setname("kaustubh");
+     printf("\n");
+     b3.display();
+     b3.setid(90);
+     b3.display();
+return 0;
+}
+
